@@ -29,15 +29,27 @@
   margin-bottom: 40px;
 }
 
-.about::after {
+.about::before {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 90px;
-  display: block;
   content: "";
   width: 446px;
   height: 446px;
+  border-radius: 50%;
+  background-color: #C4E2FF;
+}
+
+.about::after {
+  position: absolute;
+  top: 86px;
+  bottom: 0;
+  right: 165px;
+  display: block;
+  content: "";
+  width: 273px;
+  height: 627px;
   margin: auto;
   background-image: url("/src/assets/fermer.svg");
   background-repeat: no-repeat;
