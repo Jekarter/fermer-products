@@ -7,3 +7,5 @@ const gridList = css`
   line-height: 0;
   text-align: ${(props) => props.$align || "center"};
 `;
+
+export default gridList;
