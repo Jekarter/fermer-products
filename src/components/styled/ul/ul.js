@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import { css } from "styled-components";
 
 const gridList = css`
   margin-left: ${(props) => props.$indent ? `-${props.$indent}px` : `-${props.theme.indent}`};
@@ -6,4 +6,4 @@ const gridList = css`
   font-size: 0;
   line-height: 0;
   text-align: ${(props) => props.$align || "center"};
-`
+`;
