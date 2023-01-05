@@ -1,23 +1,21 @@
 import React from "react";
-import Title from "../../ui/title/title";
 import FeatureCard from "../../ui/feature-card/feature-card";
-import Button from "../../ui/button/button";
-import "./style.css";
+import { Ul, Li } from "../../styled";
+import { Features, StyledTitle, StyledButton } from "./styles"
 
-
-function FeaturesList({ features }) {
+function FeaturesList({ features }) { // преимущества - массив объектов с id, title, owner, isNegative, image, about
   return features && features.length ? (
-    <section className="features">
-      <Title>Почему фермерские продукты лучше?</Title>
-      <ul className="features__list">
+    <Features>
+      <StyledTitle as="h2">Почему фермерские продукты лучше?</StyledTitle>
+      <Ul $isGridList>
         {features.map((feature) => (
-          <li className="features__item" key={feature.id}>
+          <Li key={feature.id}>
             <FeatureCard {...feature} />
-          </li>
+          </Li>
         ))}
-      </ul>
-      <Button>Купить</Button>
-    </section>
+      </Ul>
+      <StyledButton>Купить</StyledButton>
+    </Features>
   ) : null;
 }
 
