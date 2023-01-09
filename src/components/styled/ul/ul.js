@@ -11,7 +11,7 @@ const gridList = css`
     display: inline-block;
     margin-left: ${(props) => props.$indent ? `${props.$indent}px` : props.theme.indent};
     margin-top: ${(props) => props.$indent ? `${props.$indent}px` : props.theme.indent};
-    font-size: ${(props) => props.$fontSize ? `${props.$fontSize}px` : props.theme.fontSizeDefafult};
+    font-size: ${(props) => props.$fontSize ? `${props.$fontSize}px` : props.theme.fontSizeDefault};
     line-height: ${(props) => props.$lineHeight ? `${props.$lineHeight}px` : "27px"};
     vertical-align: top;
   }

@@ -10,10 +10,12 @@ export const Features = styled(Section)`
   flex-direction: column;
   align-items: center;
 `;
+
 export const StyledTitle = styled(Title)`
   margin-bottom: 64px;
   text-align: center;
 `;
+
 export const StyledButton = styled(Button)`
   margin-top: 64px;
 `;
